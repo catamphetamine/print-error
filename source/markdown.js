@@ -11,12 +11,12 @@ export default function render(error)
 		{
 			return ' * ' + line_markup(line)
 		})
-		.join('\n')
+		.join('\n\n')
 
 		const markup =
 		`
 			${group.title}
-			${Array(group.title.length + 1).join('=')}\n${tabulate(list_item_markup, 3)}
+			${Array(group.title.length + 1).join('=')}\n\n${tabulate(list_item_markup, 3)}
 		`
 
 		return tabulate(markup, -3)
@@ -59,7 +59,7 @@ function line_markup(line_info)
 
 	if (line_info.file_path)
 	{	
-		line += '\n   ' + line_info.file_path
+		line += '\n\n   ' + line_info.file_path
 	}
 
 	return line
