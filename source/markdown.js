@@ -24,6 +24,8 @@ export default function render(error)
 	.join('')
 
 	return groups_markup
+		.replace(/^\n/, '')
+		.replace(/\n$/, '')
 }
 
 function line_markup(line_info)

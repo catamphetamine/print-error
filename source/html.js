@@ -105,6 +105,8 @@ export default function render(error, options = {})
 	`
 
 	return tabulate(result, -2)
+		.replace(/^\n/, '')
+		.replace(/\n$/, '')
 }
 
 function line_markup(line_info)

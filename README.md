@@ -6,10 +6,10 @@
 
 Prints javascript error stack trace in different flavours:
 
- * `pretty-print` coloured terminal
- * HTML
- * markdown
- * plain text
+ * `pretty-print` coloured terminal ([demo](https://github.com/AriaMinaei/pretty-error))
+ * HTML ([demo](https://github.com/halt-hammerzeit/print-error/tree/master/test/examples/error.html)
+ * markdown ([demo](https://github.com/halt-hammerzeit/print-error/tree/master/test/examples/error.md)
+ * plain text ([demo](https://github.com/halt-hammerzeit/print-error/tree/master/test/examples/error.txt)
 
 ## Installation
 
