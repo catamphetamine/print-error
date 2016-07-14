@@ -10,6 +10,6 @@ describe(`html`, function()
 		const markup = fs.readFileSync(path.join(__dirname, 'examples/error.html'), 'utf8')
 
 		// console.log(html(global.error))
-		html(global.error).should.equal(markup)
+		html(global.error, { fontSize: '20px' }).should.equal(markup)
 	})
 })

@@ -1,5 +1,5 @@
 import parse_stack_trace from './parse.js'
-import { tabulate, convert_from_camel_case } from './helpers.js'
+import { merge, clone, tabulate, convert_from_camel_case } from './helpers.js'
 
 const default_options =
 {
@@ -8,7 +8,7 @@ const default_options =
 
 export default function render(error, options = {})
 {
-	options = convert_from_camel_case(options)
+	options = merge(default_options, convert_from_camel_case(clone(options)))
 
 	const groups = parse_stack_trace(error.stack)
 
