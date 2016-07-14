@@ -3,7 +3,7 @@ import { merge, clone, tabulate, convert_from_camel_case } from './helpers.js'
 
 const default_options =
 {
-	font_size: '24px'
+	font_size: '20px'
 }
 
 export default function render(error, options = {})
