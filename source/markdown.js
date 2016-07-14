@@ -39,7 +39,7 @@ function line_markup(line_info)
 
 	if (line_info.file_path)
 	{
-		line += `*${line_info.file_name}*`
+		line += `**${line_info.file_name}**`
 	}
 
 	if (line_info.file_line_number)
