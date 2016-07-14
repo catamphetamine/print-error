@@ -54,7 +54,7 @@ function line_markup(line_info)
 			line += ' '
 		}
 
-		line += `${line_info.method_path}`
+		line += `\`${line_info.method_path}\``
 	}
 
 	if (line_info.file_path)
