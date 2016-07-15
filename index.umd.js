@@ -5,8 +5,9 @@
 
 exports = module.exports =
 {
-	html : require('./build/html'),
-	text : require('./build/text'),
+	html     : require('./build/html'),
+	text     : require('./build/text'),
 	markdown : require('./build/markdown'),
-	terminal : require('./build/terminal')
+	terminal : require('./build/terminal'),
+	parse    : require('./build/parse')
 }
