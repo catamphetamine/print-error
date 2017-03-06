@@ -5,8 +5,7 @@
   "main": "index.umd.js",
   "jsnext:main": "index.es6.js",
   "dependencies": {
-    "babel-runtime": "^6.6.1",
-    "pretty-error": "^2.0.0"
+    "babel-runtime": "^6.6.1"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
