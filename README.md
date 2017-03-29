@@ -1,8 +1,8 @@
 # print-error
 
-[![NPM Version][npm-badge]][npm]
-[![Build Status][travis-badge]][travis]
-[![Test Coverage][coveralls-badge]][coveralls]
+[![npm version](https://img.shields.io/npm/v/print-error.svg?style=flat-square)](https://www.npmjs.com/package/print-error)
+[![npm downloads](https://img.shields.io/npm/dm/print-error.svg?style=flat-square)](https://www.npmjs.com/package/print-error)
+[![coverage](https://img.shields.io/coveralls/halt-hammerzeit/print-error/master.svg?style=flat-square)](https://coveralls.io/r/halt-hammerzeit/print-error?branch=master)
 
 Prints javascript error stack trace in different flavours:
 
@@ -70,9 +70,3 @@ npm install [module name with version].tar.gz
 ## License
 
 [MIT](LICENSE)
-[npm]: https://www.npmjs.org/package/print-error
-[npm-badge]: https://img.shields.io/npm/v/print-error.svg?style=flat-square
-[travis]: https://travis-ci.org/halt-hammerzeit/print-error
-[travis-badge]: https://img.shields.io/travis/halt-hammerzeit/print-error/master.svg?style=flat-square
-[coveralls]: https://coveralls.io/r/halt-hammerzeit/print-error?branch=master
-[coveralls-badge]: https://img.shields.io/coveralls/halt-hammerzeit/print-error/master.svg?style=flat-square
