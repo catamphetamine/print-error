@@ -1,6 +1,6 @@
 {
   "name": "print-error",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Javascript print error stack trace (pretty, terminal, html, markdown, etc)",
   "main": "index.umd.js",
   "jsnext:main": "index.es6.js",
@@ -42,7 +42,7 @@
     "markdown",
     "terminal"
   ],
-  "author": "catamphetamine <catamphetamine@gmail.com>",
+  "author": "catamphetamine <purecatamphetamine@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/catamphetamine/print-error/issues"
