@@ -2,14 +2,14 @@
 
 [![npm version](https://img.shields.io/npm/v/print-error.svg?style=flat-square)](https://www.npmjs.com/package/print-error)
 [![npm downloads](https://img.shields.io/npm/dm/print-error.svg?style=flat-square)](https://www.npmjs.com/package/print-error)
-[![coverage](https://img.shields.io/coveralls/halt-hammerzeit/print-error/master.svg?style=flat-square)](https://coveralls.io/r/halt-hammerzeit/print-error?branch=master)
+[![coverage](https://img.shields.io/coveralls/catamphetamine/print-error/master.svg?style=flat-square)](https://coveralls.io/r/catamphetamine/print-error?branch=master)
 
 Prints javascript error stack trace in different flavours:
 
  * `pretty-print` coloured terminal ([demo](https://github.com/AriaMinaei/pretty-error))
- * HTML ([demo](https://github.com/halt-hammerzeit/print-error/tree/master/test/examples/error.html))
- * markdown ([demo](https://github.com/halt-hammerzeit/print-error/tree/master/test/examples/error.md))
- * plain text ([demo](https://github.com/halt-hammerzeit/print-error/tree/master/test/examples/error.txt))
+ * HTML ([demo](https://github.com/catamphetamine/print-error/tree/master/test/examples/error.html))
+ * markdown ([demo](https://github.com/catamphetamine/print-error/tree/master/test/examples/error.md))
+ * plain text ([demo](https://github.com/catamphetamine/print-error/tree/master/test/examples/error.txt))
 
 ## Installation
 
