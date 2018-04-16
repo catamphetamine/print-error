@@ -105,7 +105,7 @@ export const ERROR_STACK_STYLE = `
 	<style>
 		.print-error-stack__heading
 		{
-			font-size : 1.4rem;
+			font-size : 140%;
 			color     : #C44100;
 		}
 
@@ -124,14 +124,13 @@ export const ERROR_STACK_STYLE = `
 		{
 			margin-bottom   : 1.5em;
 			list-style-type : none;
-			font-size       : 1.2rem;
+			font-size       : 120%;
 		}
 
 		.print-error-stack__file-path
 		{
 			color         : #7f7f7f;
 			margin-top    : 0.8em;
-			font-size     : 1rem;
 		}
 
 		.print-error-stack__file-path-separator
