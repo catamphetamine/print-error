@@ -20,10 +20,23 @@ npm install print-error --save
 ## Usage
 
 ```js
-import { html, markdown, terminal } from 'print-error'
+import {
+	html,
+	htmlErrorStack,
+	ERROR_STACK_STYLE,
+	markdown,
+	terminal
+} from 'print-error'
 
+// Outputs an HTML page.
 html(new Error(), { fontSize: '16px' })
+// Outputs just the contents of the `<body/>` of the HTML page.
+htmlErrorStack(new Error())
+
+// Outputs Markdown.
 markdown(new Error())
+
+// Outputs colored terminal output.
 terminal(new Error())
 ```
 

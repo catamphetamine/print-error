@@ -11,5 +11,7 @@ describe(`html`, function()
 
 		// console.log(html(global.error))
 		html(global.error, { fontSize: '20px' }).should.equal(markup)
+
+		// fs.writeFileSync(path.join(__dirname, 'examples/error.actual.html'), html(global.error, { fontSize: '20px' }), 'utf8')
 	})
 })

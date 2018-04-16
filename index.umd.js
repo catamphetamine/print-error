@@ -1,13 +1,15 @@
 'use strict'
 
-// exports = module.exports = require('./build/...')['default']
-// exports['default'] = exports
-
 exports = module.exports =
 {
-	html     : require('./build/html'),
-	text     : require('./build/text'),
-	markdown : require('./build/markdown'),
-	terminal : require('./build/terminal'),
-	parse    : require('./build/parse')
+	html     : require('./build/html').default,
+	htmlErrorStack : require('./build/html').renderErrorStack,
+	ERROR_STACK_STYLE : require('./build/html').ERROR_STACK_STYLE,
+
+	text     : require('./build/text').default,
+	markdown : require('./build/markdown').default,
+	terminal : require('./build/terminal').default,
+	parse    : require('./build/parse').default
 }
+
+exports['default'] = exports
