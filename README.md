@@ -30,6 +30,7 @@ import {
 
 // Outputs an HTML page.
 html(new Error(), { fontSize: '16px' })
+
 // Outputs just the contents of the `<body/>` of the HTML page.
 htmlErrorStack(new Error())
 
