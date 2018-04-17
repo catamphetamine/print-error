@@ -23,8 +23,8 @@
   },
   "scripts": {
     "test": "mocha --require babel-core/register --require test/setup.js --colors --bail --reporter spec test/*.js",
-    "test-coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel-core/register --colors --reporter dot test/runner.js --recursive",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --compilers js:babel-core/register --colors --reporter spec test/runner.js --recursive",
+    "test-coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --require babel-core/register --require test/setup.js --colors --reporter dot spec test/*.js",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require babel-core/register --require test/setup.js --colors --reporter spec spec test/*.js",
     "clean-for-build": "rimraf ./build/**/*",
     "build-commonjs-modules": "cross-env BABEL_ENV=commonjs babel ./source --out-dir ./commonjs --source-maps --ignore *.test.js",
     "build-es6-modules": "cross-env BABEL_ENV=es6 babel ./source --out-dir ./modules --source-maps --ignore *.test.js",
