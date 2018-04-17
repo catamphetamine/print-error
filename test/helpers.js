@@ -120,6 +120,8 @@ describe(`helpers`, function()
 
 	it(`should tabulate`, function()
 	{
-		tabulate('', 1).should.equal('\t')
+		tabulate('', 1).should.equal('')
+		tabulate('', -1).should.equal('')
+		tabulate('a', 1).should.equal('\ta')
 	})
 })

@@ -9,10 +9,8 @@ describe(`markdown`, function()
 	{
 		const markup = fs.readFileSync(path.join(__dirname, 'examples/error.md'), 'utf8')
 
-		// Commented out because of issues with line endings on Windows.
-		// It works.
-		//
 		// console.log(markdown(global.error))
-		// markdown(global.error).should.equal(markup)
+		// Convert line endings on Windows.
+		markdown(global.error).should.equal(markup.replace(/\r/g, ''))
 	})
 })

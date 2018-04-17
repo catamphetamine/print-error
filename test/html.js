@@ -9,11 +9,9 @@ describe(`html`, function()
 	{
 		const markup = fs.readFileSync(path.join(__dirname, 'examples/error.html'), 'utf8')
 
-		// Commented out because of issues with line endings on Windows.
-		// It works.
-		//
 		// console.log(html(global.error))
-		// html(global.error, { fontSize: '20px' }).should.equal(markup)
+		// Convert line endings on Windows.
+		html(global.error, { fontSize: '20px' }).should.equal(markup.replace(/\r/g, ''))
 
 		// Examine the output.
 		// fs.writeFileSync(path.join(__dirname, 'examples/error.actual.html'), html(global.error, { fontSize: '20px' }), 'utf8')

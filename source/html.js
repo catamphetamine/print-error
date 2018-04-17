@@ -14,8 +14,8 @@ export default function render(error, options = {})
 		<html>
 			<head>
 				<title>Error</title>
-				${getErrorPageStyle(options)}
-				${ERROR_STACK_STYLE}
+${tabulate(getErrorPageStyle(options), 4)}
+${tabulate(ERROR_STACK_STYLE, 4)}
 			</head>
 			<body>\n${renderErrorStack(error)}
 			</body>
@@ -41,11 +41,10 @@ export function renderErrorStack(error)
 
 		const markup =
 		`
-			<h1 class="print-error-stack__heading${i === 0 ? '' : '--secondary' }">${escape_html(group.title)}</h1>
+			<h1 class="print-error-stack__heading${i === 0 ? '' : ' print-error-stack__heading--secondary' }">${escape_html(group.title)}</h1>
 			<ul class="print-error-stack">\n${tabulate(list_items_markup, 4)}
-			</ul>
-		`
-
+			</ul>`
+		
 		return tabulate(markup, -3)
 	})
 	.join('')
@@ -101,8 +100,9 @@ function escape_html(text)
 	return text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
 }
 
-export const ERROR_STACK_STYLE = `
-	<style>
+export const ERROR_STACK_STYLE = tabulate
+(
+`	<style>
 		.print-error-stack__heading
 		{
 			font-size : 140%;
@@ -157,13 +157,14 @@ export const ERROR_STACK_STYLE = `
 			color: #0091C2;
 			font-weight: bold;
 		}
-	</style>
-`
+	</style>`,
+-1)
 
 function getErrorPageStyle(options)
 {
-	return `
-		<style>
+	return tabulate
+	(
+`		<style>
 			html
 			{
 				font-family : Monospace, Arial;
@@ -177,6 +178,6 @@ function getErrorPageStyle(options)
 				margin-left   : 2.3em;
 				margin-right  : 2.3em;
 			}
-		</style>
-	`
+		</style>`,
+	-2)
 }

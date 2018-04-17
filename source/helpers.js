@@ -113,8 +113,11 @@ export function convert_from_camel_case(object)
 
 export function tabulate(text, tabs)
 {
-	return text.split('\n').map(line =>
+	return text.split('\n').map((line) =>
 	{
+		if (line.trim() === '') {
+			return ''
+		}
 		if (tabs < 0)
 		{
 			let i = -tabs
