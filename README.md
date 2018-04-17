@@ -23,7 +23,7 @@ npm install print-error --save
 import {
 	html,
 	htmlErrorStack,
-	HTML_STYLE,
+	HTML_ERROR_STACK_STYLE,
 	markdown,
 	terminal
 } from 'print-error'
