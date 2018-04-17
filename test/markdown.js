@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 
-import { markdown } from '../index.es6'
+import markdown from '../source/markdown'
 
 describe(`markdown`, function()
 {

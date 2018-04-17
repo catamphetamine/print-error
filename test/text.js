@@ -1,4 +1,4 @@
-import { text } from '../index.es6'
+import text from '../source/text'
 
 describe(`plain text`, function()
 {

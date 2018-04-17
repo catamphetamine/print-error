@@ -1,4 +1,4 @@
-import { terminal } from '../index.es6'
+import terminal from '../source/terminal'
 
 describe(`terminal`, function()
 {

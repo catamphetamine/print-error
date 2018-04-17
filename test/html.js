@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 
-import { html } from '../index.es6'
+import html from '../source/html'
 
 describe(`html`, function()
 {
