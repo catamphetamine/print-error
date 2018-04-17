@@ -1,6 +1,6 @@
 {
   "name": "print-error",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Javascript print error stack trace (pretty, terminal, html, markdown, etc)",
   "main": "index.commonjs.js",
   "module": "index.js",
